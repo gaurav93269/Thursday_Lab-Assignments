@@ -1,0 +1,35 @@
+/*
+Write a program to accept full name form the user and display the abbreviations 
+of the first and middle names except the last name which is displayed as it is. 
+EG: Name:Manoj Rakesh Gupta  . (M.R.Gupta
+*/
+
+import java .util.Scanner;
+public class LabAssignmentAugust16
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		name();
+		
+	}
+	public static void name()
+	{
+		Scanner sc= new Scanner(System.in); //System.in is a standard input stream.
+		System.out.print("Enter a your name");
+		char name=0;
+		name=sc.next().charAt(name);
+		
+		System.out.println("Enter your middel name");
+		char middleName=0;
+		middleName=sc.next().charAt(middleName);
+		
+		System.out.println("Enter your surname");
+		String surName=sc.next();
+	   System.out.println("your name is: ("+name+"."+middleName+"."+surName+")");
+		
+
+	}
+
+}
