@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var a,b,c;
+    function Add(num1,num2)
+    {
+        a=parseInt(num1);
+        b=parseInt(num2);
+        c=a+b;
+        alert("Result is"+c);
+    }
+    function Sub(num1,num2)
+    {
+        a=parseInt(num1);
+        b=parseInt(num2);
+        c=a-b;
+        alert("Result is"+c);
+    }
+    function Multi(num1,num2)
+    {
+        a=parseInt(num1);
+        b=parseInt(num2);
+        c=a*b;
+        alert("Result is"+c);
+    }
+    function Div(num1,num2)
+    {
+        a=parseInt(num1);
+        b=parseInt(num2);
+        c=a/b;
+        alert("Result is"+c);
+    }
+   </script> 
+   <center>
+    <table border="1">
+    <tr>
+    <h1> Basic Calculater </h1>
+    <form>
+           <tr>
+                <td>First Number: </td>
+                <td><input type="text" id="txtnum1"></td>
+            </tr>
+            <tr>
+                <td>Secound Number: </td>
+                <td><input type="text" id="txtnum2"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Add" onclick="Add(txtnum1.value,txtnum2.value)"</td>
+                <input type="button" value="Sub" onclick="Sub(txtnum1.value,txtnum2.value)"</td>
+                <td><input type="button" value="Multi" onClick="Multi(txtnum1.value,txtnum2.value);"</td>
+                <input type="button" value="Div" onClick="Div(txtnum1.value,txtnum2.value);"/>
+                <input type="reset" ></td>
+            </tr>
+        </table>
+    </form>
+   </center>
+</body>
+</html>
