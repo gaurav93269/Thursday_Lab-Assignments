@@ -1,0 +1,52 @@
+<!--  a.WAP to merge two arrays and remove duplicated items. b.WAP to add element to start of array.
+     c.WAP to check if an array contains a sepecified value. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //    program 1
+        var myArray1 = [5, 7, 9];
+        var myArray2 = [9, 8, 5, 10];
+        var myFinalArray = [];
+
+        var myArray3 = myArray1.concat(myArray2);
+        var length = myArray3.length;
+
+        while (length--) {
+            var item = myArray3[length];
+            if (myFinalArray.indexOf(item) === -1) {
+                myFinalArray.unshift(item);
+            }
+        }
+
+        console.log(myFinalArray);
+        //2 program
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.unshift("Lemon", "Pineapple");
+        console.log(fruits);
+
+        //program 3
+        
+
+        const array = ['you', 'will', 'grt', 'job'];
+
+        const hasValue = array.includes('job');
+
+       
+        if (hasValue) {
+            console.log('Array contains a value.');
+        } else {
+            console.log('Array does not contain a value.');
+        }
+    </script>
+</body>
+</html>
